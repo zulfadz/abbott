@@ -53,3 +53,29 @@ I  suppose proof by construction has always been what Im weak at, and this theor
 Essentially, the proof relies on finding a counterexample -- namely, a number whose square is bigger than $a^2$ but smaller than 2. To do that, need to use $(a + 1/n)^{2}$ and pick and $n$ that makes the terms less than 2.
 
 On the other side is finding a number whose square is smaller than $a^2$ but bigger than 2. Again, key is to use $(a - 1/n)^{2}$ and to use $n$ that will make the term bigger than 2.
+
+### Cardinality
+
+#### 5-1. Correspondence
+
+Cardinality is the size of a set.
+
+#### 5-4. (-1,1) corresopondence with R
+
+Very interesting. These two have the same cardinality by function $f(x) = x^2/(x^2-1)$. In fact, $(a,b)$ has same cardinaltiy with $\mathbf{R}$ for any $a,b$.
+
+#### 5-6-1. The set Q is countable
+
+Not quite sure how to make of this proof. I suppose the key step is that each $A_n$ is finite, and every rational number appears in exactly one of these sets. Reading this further, really the only things that help is that the formula is _onto_. That is, given any element of $\mathbf{Q}$, there is a natural number to be mapped with. And that the formula is 1-1: Since $A_n$ is disjoint, any $n_{1} \neq n_{2}, A_{n_{1}} \neq A_{n_{2}}$.
+
+#### 5-6-2. The set R is countable
+
+I don't quite follow why if list in (1) contains every real number, this leads to the conclusion that the infinite intersection of $I_n$ is empty.
+
+From [mathstackexchange](https://math.stackexchange.com/questions/1481294/using-nested-intervals-to-prove-that-mathbbr-is-not-countable), given 
+
+$\mathbf{R}_{s} = \{x_1,x_2,...\}$.
+
+We have shown that for all $n0$, $x_{n0} \notin \cap I_{n}$. That is for all $x \in \mathbf{R}_{s}$, $x \notin \cap I_{n}$. Since we assume $\mathbf{R}_{s} = \mathbf{R}$, this implies $\cap I_{n} = \emptyset$.
+
+Really like this sentence: If a set can be arranged into a single list, then deleting some elements from this list results in another (shorter, and potentially terminating) list. This means that countable sets are the smallest type of infinite set. Anything smaller is either still countable or finite.
